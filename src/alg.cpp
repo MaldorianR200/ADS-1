@@ -5,7 +5,7 @@
 
 bool checkPrime(uint64_t value) {
   std::int64_t count_d = 0;
-  for (std::int64_t i = 2; i <= value / 2; i++) {
+  for (std::int64_t i = 2; i <= std::sqrt(value); i++) {
     if (value % i == 0) {
       ++count_d;
     }
