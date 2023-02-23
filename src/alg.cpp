@@ -56,7 +56,7 @@ uint64_t nextPrime(uint64_t value) {
 uint64_t sumPrime(uint64_t hbound) {
   const std::int64_t size = 10000;
   std::int64_t arr[size] = { 0 };
-  std::int64_t j = 0;
+  std::int64_t j = 0, sum = 0;
   for (int i = 2; i < 10000; i++) {
     if (checkPrime(i)) {
       arr[j] = i;
