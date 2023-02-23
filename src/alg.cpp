@@ -63,7 +63,7 @@ uint64_t sumPrime(uint64_t hbound) {
       j++;
     }
   }
-  for (int i = 0; i < hbound; i++) {
+  for (int i = 0; i < hbound-1; i++) {
     sum += arr[i];
   }
   return sum;
